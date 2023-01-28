@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="flex mainbox justify-center items-center flex-col  bg-sky-600 w-screen h-screen">
+        <div class="title flex  items-center justify-center bg-white rounded-lg h-[80px] text-orange-500  mt-4 text-5xl font-serif  w-[550px] ">
+            Quiz Application UI</div>
+        <div class="quizbox  rounded-2xl  mt-5 mr-3 mb-3 ml-3 h-full w-full bg-white ">
+            <h1 id="tagbyid" class="tagshere h-8 flex justify-center items-center text-2xl  font-mono">Loading..."
+            </h1>
+        </div>
+        <div class=" w-9/12 bg-white   h-[587px] ">
+            <div
+                class=" flex flex-col shadow-md   shadow-green-500/50   rounded-md border-solid border-2 border-blue-800 justify-center m-4 mt-6  bg-white">
+                <div class="queNo">
+                    <h1 id="quehere1" class=" h-20  font-medium p-2">Question 1</h1>
+                </div>
+                <div class="p-2">
+                    <h1 class="question" id="question">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Molestias quo similique accusantium perferendis doloribus nemo ab. Provident tenetur ipsum
+                        neque!</h1>
+                </div>
+            </div>
+            <div class=" flex  flex-col m-4 "><label><input class="answer opacity-0 h-0 w-0 " id="1" type="radio"
+                        name="Demo" value="A :  120 m"><span id="a"
+                        class="options  border-2  shadow-md shadow-green-300/50 hover:bg-sky-300 rounded-md mt-3 pl-4  pt-2 pb-2 pr-4 bg-white w-full h-20 opt flex flex-row ">
+                        Lorem, ipsum.</span></label><label><input class="answer opacity-0 w-0 h-0  " id="2" type="radio"
+                        name="Demo" value="A :  120 m"><span id="b"
+                        class=" options border-2  shadow-md shadow-green-300/50 hover:bg-sky-300 rounded-md mt-3 pl-4  pt-2 pb-2 pr-4 bg-white w-full h-20 opt flex flex-row ">
+                        Lorem, ipsum.</span></label><label><input class="answer opacity-0 " type="radio" id="3"
+                        name="Demo" value="A :  120 m"><span id="c"
+                        class="options border-2  shadow-md shadow-green-300/50 hover:bg-sky-300 rounded-md mt-3 pl-4  pt-2 pb-2 pr-4 bg-white w-full h-20 opt flex flex-row ">
+                        Lorem, ipsum.</span></label><label><input class="answer opacity-0 " id="4" type="radio"
+                        name="Demo" value="A :  120 m"><span id="d"
+                        class="options border-2  shadow-md shadow-green-300/50 hover:bg-sky-300 rounded-md mt-3 pl-4  pt-2 pb-2 pr-4 bg-white w-full h-20 opt flex flex-row ">
+                        Lorem, ipsum.</span></label></div>
+            <div class="buttons mt-10  Prev &amp; next flex justify-evenly pt-4 pb-4"><button onclick="prevbutton()">
+                    <div
+                        class="shadow-md shadow-green-300/50 prev rounded-md font-serif font-extralight bg-green-300 pr-10 pl-10 pt-1 pb-1  hover:bg-red-600 active:bg-red-700 focus:outline-none focus:ring focus:ring-red-300 .. ">
+                        Prev</div>
+                </button><button>
+                    <div
+                        class="shadow-md shadow-green-300/50 next rounded-md font-serif font-extralight bg-green-300 pr-10 pl-10 pt-1 pb-1   hover:bg-red-600 active:bg-red-700 focus:outline-none focus:ring focus:ring-red-300 ">
+                        Clear Response</div>
+                </button><button>
+                    <div
+                        class="shadow-md shadow-green-300/50 next rounded-md font-serif font-extralight bg-green-300 pr-10 pl-10 pt-1 pb-1  hover:bg-red-600 active:bg-red-700 focus:outline-none focus:ring focus:ring-red-300 ">
+                        Mark For Review</div>
+                </button><button onclick="nextbutton()" class="nextbutton">
+                    <div
+                        class="shadow-md shadow-green-300/50 next rounded-md font-serif font-extralight bg-green-300 pr-10 pl-10 pt-1 pb-1  hover:bg-red-600 active:bg-red-700 focus:outline-none focus:ring focus:ring-red-300 ">
+                        Next</div>
+                </button></div>
+        </div>
+    </div>
+</body>
+
+</html>
