@@ -29,3 +29,28 @@ function questionNoCounter(){
   questionNo.innerHTML=`Question ${pointer+1}`
   
 }
+
+
+
+// question box
+// array of que opt and ans
+var arrForOpt = [];
+var arrForTags = [];
+var arrForQue = [];
+
+// fetch
+
+for (var i = 0; i < 20; i++) {
+  fetch(
+    "https://quizapi.io/api/v1/questions?apiKey=qI7EvoNrsaOMxWHZvqDZhPHPCxQpoINAbt9DGiRV &limit=1"
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      arrForQue.push(data[0].question);
+      arrForOpt.push(data[0].answers);
+      arrForTags.push(data[0].category);
+      //   console.log("arrForQue: ", arrForQue);
+      //   console.log("arrForOpt: ", arrForOpt);
+      //   console.log("arrForTags: ", arrForTags);
+    });
+}
