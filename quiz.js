@@ -54,3 +54,38 @@ for (var i = 0; i < 20; i++) {
       //   console.log("arrForTags: ", arrForTags);
     });
 }
+
+
+// dom
+
+// question
+setTimeout(() => {
+  for (var i = 0; i < 2; i++) {
+    domForque();
+    domForopt();
+    domForTags();
+  }
+}, 2000);
+
+const questionEl = document.getElementById("question");
+domForque = () => {
+  var temp = arrForQue[pointer];
+  questionEl.innerText = temp;
+};
+
+// options
+
+const options = document.querySelectorAll('.options');
+
+domForopt = () => {
+  var temp1= arrForOpt[pointer].answer_a;
+  var temp2 = arrForOpt[pointer].answer_b;
+  var temp3 = arrForOpt[pointer].answer_c;
+  var temp4 = arrForOpt[pointer].answer_d;
+  options[0].innerHTML=temp1
+  options[1].innerHTML=temp2
+  options[2].innerHTML=temp3
+  options[3].innerHTML=temp4
+}
+
+
