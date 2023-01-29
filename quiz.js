@@ -31,6 +31,29 @@ function questionNoCounter(){
 }
 
 
+// queCounter 
+// now this dom updated happy and simple
+var divs = document.querySelectorAll('#myDiv');
+if(pointer==0){
+  divs[0].style.border = "solid 2px red";
+  divs[0].style.color = "red";
+  divs[0].style.fontSize = "25px";
+}
+
+function   functionForQuestionCounterNext() {
+  divs.forEach(function(div, index) {
+    if(index!==pointer){
+      div.style.border = "none";
+      div.style.color = "blue";
+      div.style.fontSize = "20px";
+    }
+    if (index === pointer) {
+      div.style.border = "solid 2px red";
+      div.style.color = "red";
+      div.style.fontSize = "25px";
+    }
+  });
+}
 
 // question box
 // array of que opt and ans
