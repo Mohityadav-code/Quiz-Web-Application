@@ -88,4 +88,27 @@ domForopt = () => {
   options[3].innerHTML=temp4
 }
 
+// container 2
+//quecounter2
+function quecounter2(){
+  var quecounter2=document.querySelector(".QueNo")
+  quecounter2.innerHTML=`Question ${pointer+1}/20`
+}
+// timer
+var timer = document.getElementById("timer");
+var seconds = 60;
+var minute=29
+
+setInterval(() => {
+    seconds--;
+    if(seconds==0){
+        minute--
+        seconds=60
+        if(minute==0) return
+    }
+
+    timer.innerHTML=`00:${minute}:${seconds}`
+}, 1000);
+
+
 
