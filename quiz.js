@@ -155,3 +155,18 @@ function   functionForQuestionCounterNext() {
     }
   });
 }
+
+// functions for queCounters
+const button = document.querySelectorAll('.ButtonOfQueCounter');
+for(var i=0;i<20;i++){
+  button[i].addEventListener("click",function Valuegiveer() {
+    console.log('button.innerText: ', this.innerText);
+    pointer=parseInt(this.innerText)-1
+    functionsGroupForDom()
+  })
+}
+function QueDOMByButtons() {
+divs.forEach(element => {
+  
+});
+ }
